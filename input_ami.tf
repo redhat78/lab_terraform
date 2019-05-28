@@ -1,5 +1,5 @@
 variable "ami" {
-  default     = "ami-0f3eb76b0366d975f"
+  default     = "Image OS REDHAT 8"
   type        = "string"
   description = "Image OS REDHAT 8"
 }
