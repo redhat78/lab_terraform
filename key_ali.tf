@@ -1,0 +1,4 @@
+resource "aws_key_pair" "deployer_mmh" {
+  key_name   = "deployer_mmh-key"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGcAs7S28JuZqWDUXvtuytjc1shzzhn1nojY/oJfhF0xUsWhe42mI517kMVBstR/gySXSnrjgshsJJ6LcrB19IBKtzl3nypOGNCpkJ1ArC3QvuOympbEdqN/lf72pg2RCi41IA+UjrPov3d8/YS4eoL9zeLR+DIlCRTR0KU8fUrFYQUtS5pBTy/JPhg2slNl1JmucojRjbaU7ct6ciDg6O8BF64/ONXiqfYWxZenuAuxqWyARB4aiEX3Plv5e0XPtUT3UbBEv/zKJJMfCzuROAdwYgEjebGkyzykQ/NLaanWMoxaJFYbzBQ5VxxG/hET7xMLd8XrWTgACWB/YMu4I5 root@vlcginf021"
+}
