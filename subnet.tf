@@ -1,7 +1,7 @@
-resource "aws_subnet" "mmh_subnet_a" {
+resource "aws_subnet" "mmh_subnet" {
+  count 	    = 2
   vpc_id            = "${aws_vpc.mmh.id}"
-  cidr_block        = "172.23.1.0/24"
-  availability_zone = "eu-west-1a"
-
+  cidr_block        = "${element(var.ips, count.index)}" 
+  availability_zone = "${element(var.azs, count.index)}"
 }
 

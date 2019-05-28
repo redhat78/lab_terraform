@@ -1,4 +1,5 @@
 resource "aws_eip" "mmh" {
-  instance = "${aws_instance.mmh.id}"
+  count = 2
+  instance = "${element(aws_instance.mmh.*.id,count.index)}"
   vpc      = true
 }

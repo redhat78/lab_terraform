@@ -10,8 +10,7 @@ resource "aws_security_group" "ingress_mmh" {
     from_port = 22
     to_port   = 22
     protocol  = "tcp"
-
-}
+  }
 
   ingress {
     cidr_blocks = [
